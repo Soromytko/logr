@@ -1,5 +1,6 @@
 #include <logx/Logger.h>
 #include <cassert>
+#include <cstring>
 
 #define ANSI_COLOR_DEFAULT "\033[0m"
 
@@ -235,7 +236,7 @@ namespace logx
 		const std::wstring functionLine = [&]() -> std::wstring {
 			if (shouldPrintFunctionName(level)) {
 				const char* funcName = sourceLocation.function_name();
-				return std::format(L"[{}:{}] ", std::wstring(funcName, funcName + std::strlen(funcName)), sourceLocation.line());
+				return std::format(L"[{}:{}] ", std::wstring(funcName, funcName + strlen(funcName)), sourceLocation.line());
 			}
 			return std::wstring();
 			}();
