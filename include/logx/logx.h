@@ -1,3 +1,3 @@
 #pragma once
-#include "defines.h"
 #include "Logger.h"
+#include "defines.h"
