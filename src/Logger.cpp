@@ -1,4 +1,4 @@
-#include <logx/Logger.h>
+#include <logr/Logger.h>
 
 #include <cassert>
 #include <cstring>
@@ -20,7 +20,7 @@ static void windows_enable_ansi() {
 }
 #endif
 
-namespace logx {
+namespace logr {
 static const char *get_ansi_color_code(Color color) {
     switch (color) {
     case Color::def:
@@ -261,4 +261,4 @@ const char *Logger::getLevelAnsiColor_Unsafe(Level level) const {
     return it->second;
 }
 
-} // namespace logx
+} // namespace logr

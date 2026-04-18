@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.13 FATAL_ERROR)
 
-project(LogX)
+project(Logr)
 
-set(BINARY_NAME logx)
+set(BINARY_NAME logr)
 set(CMAKE_CXX_STANDARD 23)
 
 set(SOURCE_FILES
@@ -10,8 +10,8 @@ set(SOURCE_FILES
 )
 
 set(HEADER_FILES
-    include/logx/defines.h
-    include/logx/Logger.h
+    include/logr/defines.h
+    include/logr/Logger.h
 )
 
 include_directories(include)
